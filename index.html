@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj mundial</title>
+    <script src="scripts/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"></script>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Reloj digital</h1>
+
+    </div>
+
+    <br>
+    <div class="contenedorGrid">
+
+        <div class="elementoGrid">
+
+            <div class="contenidoElementoGrid">
+
+                <!--https://codepen.io/Nayra710/pen/pNKwLr-->
+                <canvas id="canvas" width="400" height="400"></canvas>
+
+
+                <div class="contenedorGridRelojDigital">
+                    <div>
+                        <h3 id="textViewDigitalPM" class="relojDigitalPM">PM</h3>
+                        <h3 id="textViewDigitalAM" class="relojDigitalPM">AM</h3>
+
+                    </div>
+
+                    <div class="contenedorReloj">
+                        <h1 id="textViewDigitalHora"></h1>
+                    </div>
+                    
+                    <h1 class="textViewDosPuntosReloj">:</h1>
+                    
+                    
+                    <div class="contenedorReloj">
+                        <h1 id="textViewDigitalMinuto"></h1>
+                    </div>
+                    
+                    <h1 class="textViewDosPuntosReloj">:</h1>
+                    
+                    <div class="contenedorReloj">
+                        <h1 id="textViewDigitalSegundo"></h1>
+                    </div>
+                </div>
+
+                <h1 id="textViewFecha" class="textViewFecha">17/10/2022</h1>
+
+
+
+            </div>
+
+        </div>
+
+        <div class="elementoGrid">
+
+            <div class="contenidoElementoGrid">
+
+
+                <h2 id="textViewTimeZone" class="titulosFormatos"></h2>
+
+                <h1 class="titulosFormatos">FORMATO DE FECHA</h1>
+                
+                <div class="cajaBotonesFormatoFecha">
+                    <button id="buttonFormatoFecha1" class="botonesFormatoFecha">DD/MM/YYYY</button>
+                    <button id="buttonFormatoFecha2"  class="botonesFormatoFecha">Lun, 1 Nov 2024</button>
+                </div>
+                <button id="buttonFormatoFecha3"  class="botonFormatoFechaAbajo botonesFormatoFecha">Lunes, 1 de Noviembre de 2024</button>
+
+                <br>
+                <br>
+                <br>
+
+                <h1 class="titulosFormatos">FORMATO DE HORA</h1>
+
+                <div class="cajaBotonesFormatoFecha">
+                    <button id="buttonFormatoHora1"  class="botonesFormatoFecha">12h</button>
+                    <button id="buttonFormatoHora2"  class="botonesFormatoFecha">24h</button>
+                </div>
+
+            </div>
+            
+
+        </div>
+
+        <div class="elementoGrid">
+
+            <div id="map"></div>
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="footer">
+        <small>&copy 2024 | Toni Rams | UF2_NF1</small>
+    </div>
+
+        
+    
+</body>
+</html>
