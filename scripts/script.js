@@ -487,7 +487,7 @@ function drawHand(ctx, pos, length, width, color) {
 async function obtenerDatosApi(lat, lng, click) {
   try {
     // Usar fetch para obtener la zona horaria y la hora local desde ipgeolocation.io
-    let apiKey = '41f65e51931b49e7a1491df301064775';  // Reemplaza con tu API Key de ipgeolocation.io
+    let apiKey = '';  // Reemplaza con tu API Key de ipgeolocation.io
     let response = await fetch(`https://api.ipgeolocation.io/timezone?apiKey=${apiKey}&lat=${lat}&long=${lng}`);
 
     if (!response.ok) throw new Error("Error al obtener la hora.");
